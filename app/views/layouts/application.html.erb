@@ -9,8 +9,21 @@
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
+  <header class="page-header">
+    <h1><%= link_to "Jhon'sPage", root_url, id: "logo" %><br><small>Ruby on Rails</small></h1>
+  </header>
 
   <body>
     <%= yield %>
   </body>
+  <footer>
+    <hr>
+    <ul>
+      <li><%= link_to "Home", '#' %> | <%= link_to "About", '#' %>
+       | <%= link_to "News", '#' %>
+      </li>
+      <li><%= link_to "Git-Hub", '#' %> | <%= link_to "Help", '#' %>
+      </li>
+    </ul>
+  </footer>
 </html>
